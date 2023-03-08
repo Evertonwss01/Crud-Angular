@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ListaCursos } from 'src/app/cursos/modelos/lista-cursos';
 
 @Component({
   selector: 'app-lista',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./lista.component.scss']
 })
 export class ListaComponent {
+
+  cursos: ListaCursos[] = [];
+  displayedColumns = ['nome', 'Categoria'];
+ListaCursos: any;
+
 
 }

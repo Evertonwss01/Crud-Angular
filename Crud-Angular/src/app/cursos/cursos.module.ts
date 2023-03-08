@@ -3,12 +3,16 @@ import { CommonModule } from '@angular/common';
 
 import { CursosRoutingModule } from './cursos-routing.module';
 
+import {MatTableModule} from '@angular/material/table';
+
 
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
-    CursosRoutingModule
-  ]
+    CursosRoutingModule,
+    MatTableModule
+  ],
+  exports:[ MatTableModule ]
 })
 export class CursosModule { }
